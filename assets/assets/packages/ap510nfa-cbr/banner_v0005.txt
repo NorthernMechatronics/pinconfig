@@ -1,0 +1,167 @@
+# *****************************************************************************
+#                                                                             *
+#  bsp_pins.src                                                               *
+#                                                                             *
+#  Ambiq Micro BSP pins definitions                                           *
+#                                                                             *
+# *****************************************************************************
+
+# *****************************************************************************
+#
+# Copyright (c) 2025, Ambiq Micro, Inc.
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#
+# 1. Redistributions of source code must retain the above copyright notice,
+# this list of conditions and the following disclaimer.
+#
+# 2. Redistributions in binary form must reproduce the above copyright
+# notice, this list of conditions and the following disclaimer in the
+# documentation and/or other materials provided with the distribution.
+#
+# 3. Neither the name of the copyright holder nor the names of its
+# contributors may be used to endorse or promote products derived from this
+# software without specific prior written permission.
+#
+# Third party software included in this distribution is subject to the
+# additional license terms as defined in the /docs/licenses directory.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
+#
+# This is part of revision release_sdk5p0p0-5f68a8286b of the AmbiqSuite Development Package.
+#
+# *****************************************************************************
+
+# *****************************************************************************
+#                                                                             *
+# This file contains descriptors for the various BSP pin definitions.         *
+# After completing the pin descriptors, the file is processed by a            *
+# Python script to generate the appropriate C and header file.                *
+#                                                                             *
+# NOTEs:                                                                      *
+# - This file should contain NO TAB characters, only spaces.                  *
+# - Indentation is required, but the amount of indentation is not critical,   *
+#   only the consistency of indentation.                                      *
+# - Comment lines always begin with a '#' sign.                               *
+# - Letter case of keywords (left side of equal) is not important.            *
+#   Letter case of the value (right side of equal) is not important when      *
+#   processing standard values (e.g. "lo2hi").  However, letter case is       *
+#   maintained when used for creating defines.                                *
+#                                                                             *
+# Top level keywords:                                                         *
+# pinsrc_ver: The format version of this .src file.                           *
+# pin: Attributes for describing each pin.  See below for details.            *
+#                                                                             *
+#                                                                             *
+# Version 0x0004 (Apollo4) 'pin' keywords:                                    *
+# -----------------------------------------                                   *
+# name        The name to be used for the pin.  This name will be used as a   *
+#             base for generating defines. Each pin name must be unique.      *
+# desc        A description that will appear in the generated header file.    *
+# pinnum      The pin number for the pin being defined.                       *
+# funcsel     A value 0-15, or the equivalent AM_HAL_PIN_nn_xxxx macro.       *
+#             The AM_HAL_PIN_nn_xxxx nomenclature is preferred.               *
+# GPinput     Only used if the pin is being defined as GPIO, that is          *
+#             when funcsel is AM_HAL_PIN_xx_GPIO. One of: true, false.        *
+# GPRdZero    AM_HAL_GPIO_PIN_RDZERO_READPIN or AM_HAL_GPIO_PIN_RDZERO_ZERO.  *
+# GPOutcfg    Typically used if the pin is being defined as
+# AM_HAL_PIN_xx_GPIO. *
+#             One of: DISABLE, PUSHPULL, OPENDRAIN, TRISTATE.                 *
+#             Also acceptable is a value 0-3, or a macro.                     *
+# intdir      One of: NONE, LO2HI, HI2LO, EITHER.                             *
+#             Note - does not enable any interrupt. Only configures the       *
+#             direction for when it is enabled.                               *
+#             For Apollo4, the EITHER direction may not be functional.        *
+# drvstrength One of: 0P1X, 0P5X,0P1X, 0P75X, 1P0X. If not provided, 0P5X     *
+#             is the default.                                                 *
+#             Apollo4 supports 0P1X and 0P5X on all pins. The higher
+# strengths *
+#             are supported on select pins.                                   *
+# pullup      One of: NONE, PULLDOWN, 1_5K, 6K, 12K, 24K, 50K, 100K.          *
+#             For Apollo4, pulldowns are available on most pins.              *
+# slewrate    New for Apollo4. 0 (default) or 1.                              *
+# CENum       Selects a chip enable for a given pin. Preferred usage is the   *
+#             HAL defined macros such as AM_HAL_GPIO_NCE_IOMxCEx,             *
+#             GPIO_PINCFG0_NCESRC0_MSPIxCENx. See am_hal_gpio.h for more
+# info. *
+# CEpol       Chip Enable polarity. One of ACTIVELOW (default) or ACTIVEHIGH. *
+# powersw     One of: NONE, VDD, VSS. Only availabe on select pins.           *
+#             Also acceptable is a macro (e.g. AM_HAL_GPIO_PIN_POWERSW_VDD).  *
+# forceinpen  Not generally used. Only needed if an input funcsel is not      *
+#             being set properly by the hardware.                             *
+# forceouten  Not generally used. Only needed if an output funcsel is not     *
+#             being set properly by the hardware.                             *
+#                                                                             *
+#                                                                             *
+# Version 0x0103 (Apollo3p) 'pin' keywords:                                   *
+# -----------------------------------------                                   *
+# All of the Apollo3 (version 0x0003) keywords plus/except:                   *
+# bIomMSPIn   1 (or IOM) if this pin is describing an IOM.                    *
+#             0 (or MSPI) if MSPI.                                            *
+# IOMnum      The IOM or MSPI number pertaining to the CE.                    *
+#             If bIomMSPIn == 1: 0-5                                          *
+#             If bIomMSPIn == 0: 0-2                                          *
+# Note: CEnum and CEpol remain the same as version 1.                         *
+#                                                                             *
+#                                                                             *
+# Version 0x0003 (Apollo3) 'pin' keywords:                                    *
+# ----------------------------------------                                    *
+# All of the following keywords should begin in column 4.                     *
+# name        The name to be used for the pin.  This name will be used as a   *
+#             base for generating defines. Each pin name must be unique.      *
+# desc        Optional: A description, if provided, will appear in the        *
+#             generated header file.                                          *
+# funcsel     A value 0-7, or the equivalent AM_HAL_PIN_nn_xxxx macro.        *
+#             The AM_HAL_PIN_nn_xxxx nomenclature is preferred.               *
+# pinnum      The pin number for the pin being defined (0-49).                *
+# drvstrength One of: 2, 4, 8, or 12.  If not provided, 2 is default.         *
+# GPOutcfg    Typically used if the pin is being defined as GPIO (funcsel=3)  *
+#             One of: disable, pushpull, opendrain, tristate.                 *
+#             Also acceptable is a value 0-3, or a macro.                     *
+# GPinput     Only used if the pin is being defined as GPIO (funcsel=3).      *
+#             One of: true, false.                                            *
+# GPRdZero    One of readpin, zero (or true or false).                        *
+# intdir      One of: none, lo2hi, hi2lo, either.                             *
+#             Note - does not enable any interrupt. Only configures the       *
+#             direction for when it is enabled.                               *
+# pullup      One of: none, 1_5K, 6K, 12K, 24K, weak, pulldown.               *
+#             1_5K - 24K: valid on I2C pins.                                  *
+#             weak: Valid for pullups on all other (non-I2C) pins.            *
+#             pulldown: Valid for pin 20 only.                                *
+#             Also acceptable is a macro (e.g. AM_HAL_GPIO_PIN_PULLUP_1_5K).  *
+# PowerSw     One of: VDD or VSS.                                             *
+#             Also acceptable is a macro (e.g. AM_HAL_GPIO_PIN_POWERSW_VDD).  *
+#                                                                             *
+# The following 3 parameters are used when the pin is being defined as a      *
+# chip enable, i.e. for SPI or MSPI.                                          *
+# IOMnum      The IOM number pertaining to the CE. 0-5 for SPI, 6 for MSPI.   *
+#             Also acceptable is a macro (e.g. one defined in am_bsp.h).      *
+# CEnum       A value from 0-3.                                               *
+#             If a value 0-3, a macro is created of the form:                 *
+#             #define AM_BSP_<name>_CHNL <CEnum>                              *
+#             Also acceptable is a macro (e.g. one defined in am_bsp.h),      *
+#             in this case no other macro is created.                         *
+# CEpol       Chip enable polarity, active low or active high.                *
+#             One of: LOW (default) or HIGH.                                  *
+#                                                                             *
+# *****************************************************************************
+
+# *****************************************************************************
+#                                                                             *
+#  The .src file version determines the appropriate pin template to be used   *
+#  and thus is device dependent.                                              *
+#  Apollo510: 0x0005.                                                         *
+#                                                                             *
+# *****************************************************************************

@@ -1,0 +1,48 @@
+{
+    "schema": 1,
+    "chip": "ap510nfa-cbr",
+    "pinsrcVer": "0x0005",
+    "output": {
+        "fileName": "bsp_pins.src",
+        "banner": "banner_v0005.txt",
+        "versionLine": "pinsrc_ver = {pinsrcVer}",
+        "blockKeyword": "pin",
+        "indent": 4,
+        "keyWidth": 16,
+        "order": "pinnum"
+    },
+    "functionClasses": {
+        "gpio": "^GPIO\\d+$"
+    },
+    "fields": [
+        { "key": "name", "from": "config.name", "required": true, "unique": true,
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]*$" },
+        { "key": "desc", "from": "config.description" },
+        { "key": "pinnum", "from": "pinNumber", "required": true },
+        { "key": "func_sel", "template": "{func.symbol}",
+          "fallback": "{func.value}", "required": true },
+        { "key": "drvstrength", "attr": "Drive Strength", "map": "identity",
+          "omitWhen": "packageDefault" },
+        { "key": "intdir", "attr": "Interrupt Edge",
+          "map": { "None": null, "Rising": "LO2HI", "Falling": "HI2LO", "Both": "EITHER" } },
+        { "key": "GPOutcfg", "attr": "Direction",
+          "map": { "Disabled": null, "Input": null, "Push-Pull": "PUSHPULL",
+                   "Open Drain": "OPENDRAIN", "Tristate": "TRISTATE" } },
+        { "key": "GPinput", "attr": "Direction", "when": { "class": "gpio" },
+          "map": { "Disabled": null, "Input": "ENABLE", "Push-Pull": "NONE",
+                   "Open Drain": "NONE", "Tristate": "NONE" } },
+        { "key": "pullup", "attr": "Pull up", "map": "uppercase", "omitValues": ["none"] },
+        { "key": "bIomMSPIn", "const": "IOM", "when": { "hasAttr": "IOM" } },
+        { "key": "bIomMSPIn", "const": "MSPI", "when": { "hasAttr": "MSPI" } },
+        { "key": "IOMnum", "attr": "IOM", "omitValues": ["n/a"] },
+        { "key": "MSPInum", "attr": "MSPI", "omitValues": ["n/a"] },
+        { "key": "CEnum", "template": "AM_HAL_GPIO_NCE_IOM{attr.IOM}CE{attr.CE}",
+          "when": { "hasAttr": ["IOM", "CE"], "notEquals": { "IOM": "n/a", "CE": "n/a" } } },
+        { "key": "CEpol", "attr": "CE Polarity", "when": { "hasAttr": "CE" },
+          "map": { "LOW": "ACTIVELOW", "HIGH": "ACTIVEHIGH" } }
+    ],
+    "validate": {
+        "pinnum": [0, 223],
+        "requireAllOptionsMapped": true
+    }
+}

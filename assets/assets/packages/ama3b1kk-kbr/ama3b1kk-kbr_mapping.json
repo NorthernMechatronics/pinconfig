@@ -1,0 +1,44 @@
+{
+    "schema": 1,
+    "chip": "nm1801xx",
+    "pinsrcVer": "0x0003",
+    "output": {
+        "fileName": "bsp_pins.src",
+        "banner": "banner_v0003.txt",
+        "versionLine": "pinsrc_ver = {pinsrcVer}",
+        "blockKeyword": "pin",
+        "indent": 4,
+        "keyWidth": 16,
+        "order": "pinnum"
+    },
+    "functionClasses": {
+        "gpio": "^GPIO\\d+$"
+    },
+    "fields": [
+        { "key": "name", "from": "config.name", "required": true, "unique": true,
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]*$" },
+        { "key": "desc", "from": "config.description" },
+        { "key": "pinnum", "from": "pinNumber", "required": true },
+        { "key": "func_sel", "template": "AM_HAL_PIN_{pinNumber}_{func.symbol}",
+          "fallback": "{func.value}", "required": true },
+        { "key": "drvstrength", "attr": "Drive Strength", "map": "identity",
+          "omitWhen": "packageDefault" },
+        { "key": "GPOutcfg", "attr": "Direction",
+          "map": { "Disabled": null, "Input": null, "Push-Pull": "pushpull",
+                   "Open Drain": "opendrain", "Tristate": "tristate" } },
+        { "key": "GPinput", "attr": "Direction", "when": { "class": "gpio" },
+          "map": { "Disabled": null, "Input": "true", "Push-Pull": null,
+                   "Open Drain": null, "Tristate": null } },
+        { "key": "intdir", "attr": "Interrupt Edge",
+          "map": { "None": null, "Rising": "lo2hi", "Falling": "hi2lo", "Both": "either" } },
+        { "key": "pullup", "attr": "Pull up", "map": "lowercase", "omitValues": ["none"] },
+        { "key": "IOMnum", "attr": "IOM", "omitValues": ["n/a"] },
+        { "key": "CEnum", "attr": "CE", "omitValues": ["n/a"] },
+        { "key": "CEpol", "attr": "CE Polarity", "when": { "hasAttr": "CE" },
+          "map": { "LOW": "low", "HIGH": "high" } }
+    ],
+    "validate": {
+        "pinnum": [0, 49],
+        "requireAllOptionsMapped": true
+    }
+}

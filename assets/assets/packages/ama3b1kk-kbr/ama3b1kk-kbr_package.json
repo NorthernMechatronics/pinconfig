@@ -1,0 +1,3883 @@
+{
+    "name": "AMA3B1KK-KBR",
+    "package": "BGA81",
+    "version": "0x0003",
+    "export": {
+        "mapping": "assets/packages/ama3b1kk-kbr/ama3b1kk-kbr_mapping.json",
+        "halHeader": "am_hal_pin.h"
+    },
+    "pad": {
+        "shape": "circle",
+        "width": 1.0,
+        "height": 1.0
+    },
+    "pin_attributes": [
+        {
+            "name": "Function",
+            "value": "Disabled"
+        },
+        {
+            "name": "Drive Strength",
+            "value": "2",
+            "options": [
+                "2",
+                "4",
+                "8",
+                "12"
+            ]
+        },
+        {
+            "name": "Direction",
+            "value": "Disabled",
+            "options": [
+                "Disabled",
+                "Input",
+                "Push-Pull",
+                "Open Drain",
+                "Tristate"
+            ]
+        },
+        {
+            "name": "Interrupt Edge",
+            "value": "None",
+            "options": [
+                "None",
+                "Rising",
+                "Falling",
+                "Both"
+            ]
+        },
+        {
+            "name": "Pull up",
+            "value": "None",
+            "options_i2c": [
+                "None",
+                "1_5K",
+                "6K",
+                "12K",
+                "24K",
+                "WEAK"
+            ]
+        },
+        {
+            "name": "IOM",
+            "value": "n/a",
+            "options": [
+                "n/a",
+                "0",
+                "1",
+                "2",
+                "5",
+                "6"
+            ]
+        },
+        {
+            "name": "CE",
+            "value": "n/a",
+            "options": [
+                "n/a",
+                "0",
+                "1",
+                "2",
+                "3"
+            ]
+        },
+        {
+            "name": "CE Polarity",
+            "value": "LOW",
+            "options": [
+                "LOW",
+                "HIGH"
+            ]
+        }
+    ],
+    "pins": [
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "A1",
+            "pinName": "SIMOBUCK_SW",
+            "category": "power",
+            "x": 1,
+            "y": 1
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "A2",
+            "pinName": "SIMOBUCK_SWSEL",
+            "category": "power",
+            "x": 2,
+            "y": 1
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "A3",
+            "pinName": "VDDC",
+            "category": "power",
+            "x": 3,
+            "y": 1
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "A4",
+            "pinName": "XO",
+            "category": "digital",
+            "x": 4,
+            "y": 1
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "A5",
+            "pinName": "GPIO29",
+            "gpio": 29,
+            "category": "general",
+            "x": 5,
+            "y": 1,
+            "functions": [
+                {
+                    "name": "ADCSE1",
+                    "value": 0,
+                    "symbol": "ADCSE1"
+                },
+                {
+                    "name": "NCE29",
+                    "value": 1,
+                    "symbol": "NCE29",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT9",
+                    "value": 2,
+                    "symbol": "CTIM9",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO29",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "UART0CTS",
+                    "value": 4,
+                    "symbol": "UART0CTS"
+                },
+                {
+                    "name": "UART1CTS",
+                    "value": 5,
+                    "symbol": "UART1CTS"
+                },
+                {
+                    "name": "UART0RX",
+                    "value": 6,
+                    "symbol": "UART0RX"
+                },
+                {
+                    "name": "PDM_DATA",
+                    "value": 7,
+                    "symbol": "PDMDATA",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "A6",
+            "pinName": "ADCVREF",
+            "category": "power",
+            "x": 6,
+            "y": 1
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "A7",
+            "pinName": "GPIO12",
+            "gpio": 12,
+            "category": "general",
+            "x": 7,
+            "y": 1,
+            "functions": [
+                {
+                    "name": "ADCD0NSE9",
+                    "value": 0,
+                    "symbol": "ADCD0NSE9"
+                },
+                {
+                    "name": "NCE12",
+                    "value": 1,
+                    "symbol": "NCE12",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT0",
+                    "value": 2,
+                    "symbol": "CTIM0",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO12",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "SLnCE",
+                    "value": 4
+                },
+                {
+                    "name": "PDM_CLK",
+                    "value": 5,
+                    "symbol": "PDMCLK",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART0CTS",
+                    "value": 6,
+                    "symbol": "UART0CTS"
+                },
+                {
+                    "name": "UART1TX",
+                    "value": 7,
+                    "symbol": "UART1TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "A8",
+            "pinName": "GPIO25",
+            "gpio": 25,
+            "category": "general",
+            "x": 8,
+            "y": 1,
+            "functions": [
+                {
+                    "name": "UART1RX",
+                    "value": 0,
+                    "symbol": "UART1RX"
+                },
+                {
+                    "name": "NCE25",
+                    "value": 1,
+                    "symbol": "NCE25",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT1",
+                    "value": 2,
+                    "symbol": "CTIM1",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO25",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "M2SDAWIR3",
+                    "value": 4,
+                    "symbol": "M2SDAWIR3",
+                    "attributes": {
+                        "IOM": 2,
+                        "Pull up": "1_5K",
+                        "Direction": "Open Drain",
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M2MISO",
+                    "value": 5,
+                    "symbol": "M2MISO",
+                    "attributes": {
+                        "IOM": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "A9",
+            "pinName": "GPIO28",
+            "gpio": 28,
+            "category": "general",
+            "x": 9,
+            "y": 1,
+            "functions": [
+                {
+                    "name": "I2S_WCLK",
+                    "value": 0,
+                    "symbol": "I2SWCLK"
+                },
+                {
+                    "name": "NCE28",
+                    "value": 1,
+                    "symbol": "NCE28",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT7",
+                    "value": 2,
+                    "symbol": "CTIM7",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO28",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 4
+                },
+                {
+                    "name": "M2MOSI",
+                    "value": 5,
+                    "symbol": "M2MOSI",
+                    "attributes": {
+                        "IOM": 2,
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART0TX",
+                    "value": 6,
+                    "symbol": "UART0TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "B1",
+            "pinName": "VDDB",
+            "category": "power",
+            "x": 1,
+            "y": 2
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "B2",
+            "pinName": "VDDP",
+            "category": "power",
+            "x": 2,
+            "y": 2
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "B3",
+            "pinName": "VSSP",
+            "category": "ground",
+            "x": 3,
+            "y": 2
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "B4",
+            "pinName": "XI",
+            "category": "digital",
+            "x": 4,
+            "y": 2
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "B5",
+            "pinName": "GPIO11",
+            "gpio": 11,
+            "category": "general",
+            "x": 5,
+            "y": 2,
+            "functions": [
+                {
+                    "name": "ADCSE2",
+                    "value": 0,
+                    "symbol": "ADCSE2"
+                },
+                {
+                    "name": "NCE11",
+                    "value": 1,
+                    "symbol": "NCE11",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT31",
+                    "value": 2,
+                    "symbol": "CTIM31",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO11",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "SLINT",
+                    "value": 4,
+                    "symbol": "SLINT",
+                    "attributes": {
+                        "Direction": "Input",
+                        "Interrupt Edge": "Falling"
+                    }
+                },
+                {
+                    "name": "UART1CTS",
+                    "value": 5,
+                    "symbol": "UART1CTS"
+                },
+                {
+                    "name": "UART0RX",
+                    "value": 6,
+                    "symbol": "UART0RX"
+                },
+                {
+                    "name": "PDM_DATA",
+                    "value": 7,
+                    "symbol": "PDMDATA",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "B6",
+            "pinName": "GPIO33",
+            "gpio": 33,
+            "category": "general",
+            "x": 6,
+            "y": 2,
+            "functions": [
+                {
+                    "name": "ADCSE5",
+                    "value": 0,
+                    "symbol": "ADCSE5"
+                },
+                {
+                    "name": "NCE33",
+                    "value": 1,
+                    "symbol": "NCE33",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "32KHz_XT",
+                    "value": 2,
+                    "symbol": "32KHZXT"
+                },
+                {
+                    "name": "GPIO33",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 4
+                },
+                {
+                    "name": "UART0CTS",
+                    "value": 5,
+                    "symbol": "UART0CTS"
+                },
+                {
+                    "name": "CT23",
+                    "value": 6,
+                    "symbol": "CTIM23",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "SWO",
+                    "value": 7,
+                    "symbol": "SWO",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "B7",
+            "pinName": "GPIO13",
+            "gpio": 13,
+            "category": "general",
+            "x": 7,
+            "y": 2,
+            "functions": [
+                {
+                    "name": "ADCD0PSE8",
+                    "value": 0,
+                    "symbol": "ADCD0PSE8"
+                },
+                {
+                    "name": "NCE13",
+                    "value": 1,
+                    "symbol": "NCE13",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT2",
+                    "value": 2,
+                    "symbol": "CTIM2",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO13",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "I2S_BCLK",
+                    "value": 4,
+                    "symbol": "I2SBCLK"
+                },
+                {
+                    "name": "-",
+                    "value": 5
+                },
+                {
+                    "name": "UART0RTS",
+                    "value": 6,
+                    "symbol": "UART0RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART1RX",
+                    "value": 7,
+                    "symbol": "UART1RX"
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "B8",
+            "pinName": "GPIO26",
+            "gpio": 26,
+            "category": "general",
+            "x": 8,
+            "y": 2,
+            "functions": [
+                {
+                    "name": "-",
+                    "value": 0
+                },
+                {
+                    "name": "NCE26",
+                    "value": 1,
+                    "symbol": "NCE26",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT3",
+                    "value": 2,
+                    "symbol": "CTIM3",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO26",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "SCCRST",
+                    "value": 4,
+                    "symbol": "SCCRST",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "MSPI1",
+                    "value": 5,
+                    "symbol": "MSPI1",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": 6
+                    }
+                },
+                {
+                    "name": "UART0TX",
+                    "value": 6,
+                    "symbol": "UART0TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART1CTS",
+                    "value": 7,
+                    "symbol": "UART1CTS"
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "B9",
+            "pinName": "GPIO27",
+            "gpio": 27,
+            "category": "general",
+            "x": 9,
+            "y": 2,
+            "functions": [
+                {
+                    "name": "UART0RX",
+                    "value": 0,
+                    "symbol": "UART0RX"
+                },
+                {
+                    "name": "NCE27",
+                    "value": 1,
+                    "symbol": "NCE27",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT5",
+                    "value": 2,
+                    "symbol": "CTIM5",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO27",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "M2SCL",
+                    "value": 4,
+                    "symbol": "M2SCL",
+                    "attributes": {
+                        "IOM": 2,
+                        "Pull up": "1_5K",
+                        "Direction": "Open Drain",
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M2SCK",
+                    "value": 5,
+                    "symbol": "M2SCK",
+                    "attributes": {
+                        "IOM": 2,
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "C1",
+            "pinName": "VDDBH",
+            "category": "power",
+            "x": 1,
+            "y": 3
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "C2",
+            "pinName": "VSSB",
+            "category": "ground",
+            "x": 2,
+            "y": 3
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "C3",
+            "pinName": "GPIO19",
+            "gpio": 19,
+            "category": "general",
+            "x": 3,
+            "y": 3,
+            "functions": [
+                {
+                    "name": "CMPRF0",
+                    "value": 0,
+                    "symbol": "CMPRF0"
+                },
+                {
+                    "name": "NCE19",
+                    "value": 1,
+                    "symbol": "NCE19",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT6",
+                    "value": 2,
+                    "symbol": "CTIM6",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO19",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "SCCCLK",
+                    "value": 4,
+                    "symbol": "SCCCLK",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 5
+                },
+                {
+                    "name": "UART1RX",
+                    "value": 6,
+                    "symbol": "UART1RX"
+                },
+                {
+                    "name": "I2S_BCLK",
+                    "value": 7,
+                    "symbol": "I2SBCLK"
+                }
+            ]
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "C4",
+            "pinName": "VDDA",
+            "category": "power",
+            "x": 4,
+            "y": 3
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "C5",
+            "pinName": "GPIO18",
+            "gpio": 18,
+            "category": "general",
+            "x": 5,
+            "y": 3,
+            "functions": [
+                {
+                    "name": "CMPIN1",
+                    "value": 0,
+                    "symbol": "CMPIN1"
+                },
+                {
+                    "name": "NCE18",
+                    "value": 1,
+                    "symbol": "NCE18",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT4",
+                    "value": 2,
+                    "symbol": "CTIM4",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO18",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "UART0RTS",
+                    "value": 4,
+                    "symbol": "UART0RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 5
+                },
+                {
+                    "name": "UART1TX",
+                    "value": 6,
+                    "symbol": "UART1TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "SCCIO",
+                    "value": 7,
+                    "symbol": "SCCIO",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "C6",
+            "pinName": "GPIO34",
+            "gpio": 34,
+            "category": "general",
+            "x": 6,
+            "y": 3,
+            "functions": [
+                {
+                    "name": "ADCSE6",
+                    "value": 0,
+                    "symbol": "ADCSE6"
+                },
+                {
+                    "name": "NCE34",
+                    "value": 1,
+                    "symbol": "NCE34",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "UART1RTS",
+                    "value": 2,
+                    "symbol": "UART1RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO34",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "CMPRF2",
+                    "value": 4,
+                    "symbol": "CMPRF2"
+                },
+                {
+                    "name": "UART0RTS",
+                    "value": 5,
+                    "symbol": "UART0RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART0RX",
+                    "value": 6,
+                    "symbol": "UART0RX"
+                },
+                {
+                    "name": "PDM_DATA",
+                    "value": 7,
+                    "symbol": "PDMDATA",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "C7",
+            "pinName": "GPIO15",
+            "gpio": 15,
+            "category": "general",
+            "x": 7,
+            "y": 3,
+            "functions": [
+                {
+                    "name": "ADCD1N",
+                    "value": 0,
+                    "symbol": "ADCD1N"
+                },
+                {
+                    "name": "NCE15",
+                    "value": 1,
+                    "symbol": "NCE15",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "UART1RX",
+                    "value": 2,
+                    "symbol": "UART1RX"
+                },
+                {
+                    "name": "GPIO15",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "PDM_DATA",
+                    "value": 4,
+                    "symbol": "PDMDATA",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 5
+                },
+                {
+                    "name": "SWDIO",
+                    "value": 6,
+                    "symbol": "SWDIO"
+                },
+                {
+                    "name": "SWO",
+                    "value": 7,
+                    "symbol": "SWO",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "C8",
+            "pinName": "GPIO24",
+            "gpio": 24,
+            "category": "general",
+            "x": 8,
+            "y": 3,
+            "functions": [
+                {
+                    "name": "UART1TX",
+                    "value": 0,
+                    "symbol": "UART1TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "NCE24",
+                    "value": 1,
+                    "symbol": "NCE24",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "MSPI8",
+                    "value": 2,
+                    "symbol": "MSPI8",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": 6
+                    }
+                },
+                {
+                    "name": "GPIO24",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "UART0CTS",
+                    "value": 4,
+                    "symbol": "UART0CTS"
+                },
+                {
+                    "name": "CT21",
+                    "value": 5,
+                    "symbol": "CTIM21",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "32KHz_XT",
+                    "value": 6,
+                    "symbol": "32KHZXT"
+                },
+                {
+                    "name": "SWO",
+                    "value": 7,
+                    "symbol": "SWO",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "C9",
+            "pinName": "GPIO22",
+            "gpio": 22,
+            "category": "general",
+            "x": 9,
+            "y": 3,
+            "functions": [
+                {
+                    "name": "UART0TX",
+                    "value": 0,
+                    "symbol": "UART0TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "NCE22",
+                    "value": 1,
+                    "symbol": "NCE22",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT12",
+                    "value": 2,
+                    "symbol": "CTIM12",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO22",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "PDM_CLK",
+                    "value": 4,
+                    "symbol": "PDMCLK",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 5
+                },
+                {
+                    "name": "MSPI0",
+                    "value": 6,
+                    "symbol": "MSPI0",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": 6
+                    }
+                },
+                {
+                    "name": "SWO",
+                    "value": 7,
+                    "symbol": "SWO",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "D1",
+            "pinName": "VDDBH_SW",
+            "category": "power",
+            "x": 1,
+            "y": 4
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "D2",
+            "pinName": "VDDF",
+            "category": "power",
+            "x": 2,
+            "y": 4
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "D3",
+            "pinName": "GPIO17",
+            "gpio": 17,
+            "category": "general",
+            "x": 3,
+            "y": 4,
+            "functions": [
+                {
+                    "name": "CMPRF1",
+                    "value": 0,
+                    "symbol": "CMPRF1"
+                },
+                {
+                    "name": "NCE17",
+                    "value": 1,
+                    "symbol": "NCE17",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "TRIG1",
+                    "value": 2,
+                    "symbol": "TRIG1"
+                },
+                {
+                    "name": "GPIO17",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "SCCCLK",
+                    "value": 4,
+                    "symbol": "SCCCLK",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 5
+                },
+                {
+                    "name": "UART0RX",
+                    "value": 6,
+                    "symbol": "UART0RX"
+                },
+                {
+                    "name": "UART1CTS",
+                    "value": 7,
+                    "symbol": "UART1CTS"
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "D4",
+            "pinName": "GPIO16",
+            "gpio": 16,
+            "category": "general",
+            "x": 4,
+            "y": 4,
+            "functions": [
+                {
+                    "name": "ADCSE0",
+                    "value": 0,
+                    "symbol": "ADCSE0"
+                },
+                {
+                    "name": "NCE16",
+                    "value": 1,
+                    "symbol": "NCE16",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "TRIG0",
+                    "value": 2,
+                    "symbol": "TRIG0"
+                },
+                {
+                    "name": "GPIO16",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "SCCRST",
+                    "value": 4,
+                    "symbol": "SCCRST",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "CMPIN0",
+                    "value": 5,
+                    "symbol": "CMPIN0"
+                },
+                {
+                    "name": "UART0TX",
+                    "value": 6,
+                    "symbol": "UART0TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART1RTS",
+                    "value": 7,
+                    "symbol": "UART1RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "D5",
+            "pinName": "GPIO31",
+            "gpio": 31,
+            "category": "general",
+            "x": 5,
+            "y": 4,
+            "functions": [
+                {
+                    "name": "ADCSE3",
+                    "value": 0,
+                    "symbol": "ADCSE3"
+                },
+                {
+                    "name": "NCE31",
+                    "value": 1,
+                    "symbol": "NCE31",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT13",
+                    "value": 2,
+                    "symbol": "CTIM13",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO31",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "UART0RX",
+                    "value": 4,
+                    "symbol": "UART0RX"
+                },
+                {
+                    "name": "SCCCLK",
+                    "value": 5,
+                    "symbol": "SCCCLK",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "UART1RTS",
+                    "value": 7,
+                    "symbol": "UART1RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "D6",
+            "pinName": "GPIO35",
+            "gpio": 35,
+            "category": "general",
+            "x": 6,
+            "y": 4,
+            "functions": [
+                {
+                    "name": "ADCSE7",
+                    "value": 0,
+                    "symbol": "ADCSE7"
+                },
+                {
+                    "name": "NCE35",
+                    "value": 1,
+                    "symbol": "NCE35",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "UART1TX",
+                    "value": 2,
+                    "symbol": "UART1TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO35",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "I2S_DAT",
+                    "value": 4,
+                    "symbol": "I2SDAT"
+                },
+                {
+                    "name": "CT27",
+                    "value": 5,
+                    "symbol": "CTIM27",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART0RTS",
+                    "value": 6,
+                    "symbol": "UART0RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "D7",
+            "pinName": "GPIO14",
+            "gpio": 14,
+            "category": "general",
+            "x": 7,
+            "y": 4,
+            "functions": [
+                {
+                    "name": "ADCD1P",
+                    "value": 0,
+                    "symbol": "ADCD1P"
+                },
+                {
+                    "name": "NCE14",
+                    "value": 1,
+                    "symbol": "NCE14",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "UART1TX",
+                    "value": 2,
+                    "symbol": "UART1TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO14",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "PDM_CLK",
+                    "value": 4,
+                    "symbol": "PDMCLK",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 5
+                },
+                {
+                    "name": "SWDCK",
+                    "value": 6,
+                    "symbol": "SWDCK"
+                },
+                {
+                    "name": "32KHz_XT",
+                    "value": 7,
+                    "symbol": "32KHZXT"
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "D8",
+            "pinName": "GPIO23",
+            "gpio": 23,
+            "category": "general",
+            "x": 8,
+            "y": 4,
+            "functions": [
+                {
+                    "name": "UART0RX",
+                    "value": 0,
+                    "symbol": "UART0RX"
+                },
+                {
+                    "name": "NCE23",
+                    "value": 1,
+                    "symbol": "NCE23",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT14",
+                    "value": 2,
+                    "symbol": "CTIM14",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO23",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "I2S_WCLK",
+                    "value": 4,
+                    "symbol": "I2SWCLK"
+                },
+                {
+                    "name": "CMPOUT",
+                    "value": 5,
+                    "symbol": "CMPOUT"
+                },
+                {
+                    "name": "MSPI3",
+                    "value": 6,
+                    "symbol": "MSPI3",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": 6
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "D9",
+            "pinName": "GPIO04",
+            "gpio": 4,
+            "category": "general",
+            "x": 9,
+            "y": 4,
+            "functions": [
+                {
+                    "name": "UART0CTS",
+                    "value": 0,
+                    "symbol": "UART0CTS"
+                },
+                {
+                    "name": "SLINT",
+                    "value": 1,
+                    "symbol": "SLINT"
+                },
+                {
+                    "name": "NCE4",
+                    "value": 2,
+                    "symbol": "NCE4",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "GPIO04",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 4
+                },
+                {
+                    "name": "UART1RX",
+                    "value": 5,
+                    "symbol": "UART1RX"
+                },
+                {
+                    "name": "CT17",
+                    "value": 6,
+                    "symbol": "CTIM17",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "MSPI2",
+                    "value": 7,
+                    "symbol": "MSPI2",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": 6
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "E1",
+            "pinName": "VDDS",
+            "category": "power",
+            "x": 1,
+            "y": 5
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "E2",
+            "pinName": "VSS",
+            "category": "ground",
+            "x": 2,
+            "y": 5
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "E3",
+            "pinName": "VSSA",
+            "category": "ground",
+            "x": 3,
+            "y": 5
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "E4",
+            "pinName": "NC",
+            "category": "nc",
+            "x": 4,
+            "y": 5
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "E5",
+            "pinName": "GPIO41",
+            "gpio": 41,
+            "category": "general",
+            "x": 5,
+            "y": 5,
+            "functions": [
+                {
+                    "name": "NCE41",
+                    "value": 0,
+                    "symbol": "NCE41",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 1
+                },
+                {
+                    "name": "SWO",
+                    "value": 2,
+                    "symbol": "SWO",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO41",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "I2S_WCLK",
+                    "value": 4,
+                    "symbol": "I2SWCLK"
+                },
+                {
+                    "name": "UART1RTS",
+                    "value": 5,
+                    "symbol": "UART1RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART0TX",
+                    "value": 6,
+                    "symbol": "UART0TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART0RTS",
+                    "value": 7,
+                    "symbol": "UART0RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "E6",
+            "pinName": "GPIO32",
+            "gpio": 32,
+            "category": "general",
+            "x": 6,
+            "y": 5,
+            "functions": [
+                {
+                    "name": "ADCSE4",
+                    "value": 0,
+                    "symbol": "ADCSE4"
+                },
+                {
+                    "name": "NCE32",
+                    "value": 1,
+                    "symbol": "NCE32",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT15",
+                    "value": 2,
+                    "symbol": "CTIM15",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO32",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "SCCIO",
+                    "value": 4,
+                    "symbol": "SCCIO",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 5
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "UART1CTS",
+                    "value": 7,
+                    "symbol": "UART1CTS"
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "E7",
+            "pinName": "GPIO46",
+            "gpio": 46,
+            "category": "general",
+            "x": 7,
+            "y": 5,
+            "functions": [
+                {
+                    "name": "I2S_BCLK",
+                    "value": 0,
+                    "symbol": "32KHZXT"
+                },
+                {
+                    "name": "NCE46",
+                    "value": 1,
+                    "symbol": "NCE46",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT24",
+                    "value": 2,
+                    "symbol": "CTIM24",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO46",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "SCCRST",
+                    "value": 4,
+                    "symbol": "SCCRST",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "PDM_CLK",
+                    "value": 5,
+                    "symbol": "PDMCLK",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART1TX",
+                    "value": 6,
+                    "symbol": "UART1TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "SWO",
+                    "value": 7,
+                    "symbol": "SWO",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "E8",
+            "pinName": "GPIO06",
+            "gpio": 6,
+            "category": "general",
+            "x": 8,
+            "y": 5,
+            "functions": [
+                {
+                    "name": "M0SDAWIR3",
+                    "value": 0,
+                    "symbol": "M0SDAWIR3",
+                    "attributes": {
+                        "IOM": 0,
+                        "Pull up": "1_5K",
+                        "Direction": "Open Drain",
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M0MISO",
+                    "value": 1,
+                    "symbol": "M0MISO",
+                    "attributes": {
+                        "IOM": 0
+                    }
+                },
+                {
+                    "name": "UART0CTS",
+                    "value": 2,
+                    "symbol": "UART0CTS"
+                },
+                {
+                    "name": "GPIO06",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 4
+                },
+                {
+                    "name": "CT10",
+                    "value": 5,
+                    "symbol": "CTIM10",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "I2S_DAT",
+                    "value": 7,
+                    "symbol": "I2S_DAT"
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "E9",
+            "pinName": "GPIO05",
+            "gpio": 5,
+            "category": "general",
+            "x": 9,
+            "y": 5,
+            "functions": [
+                {
+                    "name": "M0SCL",
+                    "value": 0,
+                    "symbol": "M0SCL",
+                    "attributes": {
+                        "IOM": 0,
+                        "Pull up": "1_5K",
+                        "Direction": "Open Drain",
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M0SCK",
+                    "value": 1,
+                    "symbol": "M0SCK",
+                    "attributes": {
+                        "IOM": 0,
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART0RTS",
+                    "value": 2,
+                    "symbol": "UART0RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO05",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 4
+                },
+                {
+                    "name": "-",
+                    "value": 5
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "CT8",
+                    "value": 7,
+                    "symbol": "CTIM8",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "F1",
+            "pinName": "XO32MP",
+            "category": "digital",
+            "x": 1,
+            "y": 6
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "F2",
+            "pinName": "VSSBA",
+            "category": "ground",
+            "x": 2,
+            "y": 6
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "F3",
+            "pinName": "VDDH",
+            "category": "power",
+            "x": 3,
+            "y": 6
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "F4",
+            "pinName": "GPIO02",
+            "gpio": 2,
+            "category": "general",
+            "x": 4,
+            "y": 6,
+            "functions": [
+                {
+                    "name": "UART1RX",
+                    "value": 0,
+                    "symbol": "UART1RX"
+                },
+                {
+                    "name": "SLMISO",
+                    "value": 1,
+                    "symbol": "SLMISO",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART0RX",
+                    "value": 2,
+                    "symbol": "UART0RX"
+                },
+                {
+                    "name": "GPIO02",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 4
+                },
+                {
+                    "name": "MSPI6",
+                    "value": 5,
+                    "symbol": "MSPI6",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": 6
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "NCE2",
+                    "value": 7,
+                    "symbol": "NCE2",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "F5",
+            "pinName": "GPIO45",
+            "gpio": 45,
+            "category": "general",
+            "x": 5,
+            "y": 6,
+            "functions": [
+                {
+                    "name": "UART1CTS",
+                    "value": 0,
+                    "symbol": "UART1CTS"
+                },
+                {
+                    "name": "NCE45",
+                    "value": 1,
+                    "symbol": "NCE45",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT22",
+                    "value": 2,
+                    "symbol": "CTIM22",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO45",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "I2S_DAT",
+                    "value": 4,
+                    "symbol": "I2SDAT"
+                },
+                {
+                    "name": "PDM_DATA",
+                    "value": 5,
+                    "symbol": "PDMDATA",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART0RX",
+                    "value": 6,
+                    "symbol": "UART0RX"
+                },
+                {
+                    "name": "SWO",
+                    "value": 7,
+                    "symbol": "SWO",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "F6",
+            "pinName": "GPIO30",
+            "gpio": 30,
+            "category": "general",
+            "x": 6,
+            "y": 6,
+            "functions": [
+                {
+                    "name": "-",
+                    "value": 0
+                },
+                {
+                    "name": "NCE30",
+                    "value": 1,
+                    "symbol": "NCE30",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT11",
+                    "value": 2,
+                    "symbol": "CTIM11",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO30",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "UART0TX",
+                    "value": 4,
+                    "symbol": "UART0TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART1RTS",
+                    "value": 5,
+                    "symbol": "UART1RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "I2S_DAT",
+                    "value": 7,
+                    "symbol": "I2SDAT"
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "F7",
+            "pinName": "GPIO21",
+            "gpio": 21,
+            "category": "general",
+            "x": 7,
+            "y": 6,
+            "functions": [
+                {
+                    "name": "SWDIO",
+                    "value": 0,
+                    "symbol": "SWDIO"
+                },
+                {
+                    "name": "NCE21",
+                    "value": 1,
+                    "symbol": "NCE21",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 2
+                },
+                {
+                    "name": "GPIO21",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "UART0RX",
+                    "value": 4,
+                    "symbol": "UART0RX"
+                },
+                {
+                    "name": "UART1RX",
+                    "value": 5,
+                    "symbol": "UART1RX"
+                },
+                {
+                    "name": "SCCRST",
+                    "value": 6,
+                    "symbol": "I2SBCLK",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART1CTS",
+                    "value": 7,
+                    "symbol": "UART1CTS"
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "F8",
+            "pinName": "GPIO08",
+            "gpio": 8,
+            "category": "general",
+            "x": 8,
+            "y": 6,
+            "functions": [
+                {
+                    "name": "M1SCL",
+                    "value": 0,
+                    "symbol": "M1SCL",
+                    "attributes": {
+                        "IOM": 1,
+                        "Pull up": "1_5K",
+                        "Direction": "Open Drain",
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M1SCK",
+                    "value": 1,
+                    "symbol": "M1SCK",
+                    "attributes": {
+                        "IOM": 1,
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "NCE8",
+                    "value": 2,
+                    "symbol": "NCE8",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "GPIO08",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "SCCCLK",
+                    "value": 4,
+                    "symbol": "SCCCLK",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 5
+                },
+                {
+                    "name": "UART1TX",
+                    "value": 6,
+                    "symbol": "UART1TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "F9",
+            "pinName": "GPIO07",
+            "gpio": 7,
+            "category": "general",
+            "x": 9,
+            "y": 6,
+            "functions": [
+                {
+                    "name": "NCE7",
+                    "value": 0,
+                    "symbol": "NCE7",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "M0MOSI",
+                    "value": 1,
+                    "symbol": "M0MOSI",
+                    "attributes": {
+                        "IOM": 0,
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "CLKOUT",
+                    "value": 2,
+                    "symbol": "CLKOUT"
+                },
+                {
+                    "name": "GPIO07",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "TRIG0",
+                    "value": 4,
+                    "symbol": "TRIG0"
+                },
+                {
+                    "name": "UART0TX",
+                    "value": 5,
+                    "symbol": "UART0TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "CT19",
+                    "value": 7,
+                    "symbol": "CTIM19",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "G1",
+            "pinName": "XO32MM",
+            "category": "digital",
+            "x": 1,
+            "y": 7
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "G2",
+            "pinName": "VDCDCRF",
+            "category": "power",
+            "x": 2,
+            "y": 7
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "G3",
+            "pinName": "RSTN",
+            "category": "digital",
+            "x": 3,
+            "y": 7
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "G4",
+            "pinName": "GPIO01",
+            "gpio": 1,
+            "category": "general",
+            "x": 4,
+            "y": 7,
+            "functions": [
+                {
+                    "name": "SLSDAWIR3",
+                    "value": 0,
+                    "symbol": "SLSDAWIR3",
+                    "attributes": {
+                        "Direction": "Open Drain",
+                        "Pull up": "1_5K"
+                    }
+                },
+                {
+                    "name": "SLMOSI",
+                    "value": 1,
+                    "symbol": "SLMOSI",
+                    "attributes": {
+                        "Direction": "Input"
+                    }
+                },
+                {
+                    "name": "UART0TX",
+                    "value": 2,
+                    "symbol": "UART0TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO01",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 4
+                },
+                {
+                    "name": "MSPI5",
+                    "value": 5,
+                    "symbol": "MSPI5",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": 6
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "NCE1",
+                    "value": 7,
+                    "symbol": "NCE1",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "G5",
+            "pinName": "GPIO03",
+            "gpio": 3,
+            "category": "general",
+            "x": 5,
+            "y": 7,
+            "functions": [
+                {
+                    "name": "UART0RTS",
+                    "value": 0,
+                    "symbol": "UART0RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "SLnCE",
+                    "value": 1,
+                    "symbol": "SLnCE",
+                    "attributes": {
+                        "Direction": "Input",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "NCE3",
+                    "value": 2,
+                    "symbol": "NCE3",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "GPIO03",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 4
+                },
+                {
+                    "name": "MSPI7",
+                    "value": 5,
+                    "symbol": "MSPI7",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": 6
+                    }
+                },
+                {
+                    "name": "TRIG1",
+                    "value": 6,
+                    "symbol": "TRIG1"
+                },
+                {
+                    "name": "I2S_WCLK",
+                    "value": 7,
+                    "symbol": "I2S_WCLK"
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "G6",
+            "pinName": "GPIO20",
+            "gpio": 20,
+            "category": "general",
+            "x": 6,
+            "y": 7,
+            "functions": [
+                {
+                    "name": "SWDCK",
+                    "value": 0,
+                    "symbol": "SWDCK"
+                },
+                {
+                    "name": "NCE20",
+                    "value": 1,
+                    "symbol": "NCE20",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 2
+                },
+                {
+                    "name": "GPIO20",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "UART0TX",
+                    "value": 4,
+                    "symbol": "UART0TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART1TX",
+                    "value": 5,
+                    "symbol": "UART1TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "I2S_BCLK",
+                    "value": 6,
+                    "symbol": "I2SBCLK"
+                },
+                {
+                    "name": "UART1RTS",
+                    "value": 7,
+                    "symbol": "UART1RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "G7",
+            "pinName": "GPIO09",
+            "gpio": 9,
+            "category": "general",
+            "x": 7,
+            "y": 7,
+            "functions": [
+                {
+                    "name": "M1SDAWIR",
+                    "value": 0,
+                    "symbol": "M1SDAWIR3",
+                    "attributes": {
+                        "IOM": 1,
+                        "Pull up": "1_5K",
+                        "Direction": "Open Drain",
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M1MISO",
+                    "value": 1,
+                    "symbol": "M1MISO",
+                    "attributes": {
+                        "IOM": 1
+                    }
+                },
+                {
+                    "name": "NCE9",
+                    "value": 2,
+                    "symbol": "NCE9",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "GPIO09",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "SCCIO",
+                    "value": 4,
+                    "symbol": "SCCIO",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 5
+                },
+                {
+                    "name": "UART1RX",
+                    "value": 6,
+                    "symbol": "UART1RX"
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "G8",
+            "pinName": "GPIO10",
+            "gpio": 10,
+            "category": "general",
+            "x": 8,
+            "y": 7,
+            "functions": [
+                {
+                    "name": "UART1TX",
+                    "value": 0,
+                    "symbol": "UART1TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M1MOSI",
+                    "value": 1,
+                    "symbol": "M1MOSI",
+                    "attributes": {
+                        "IOM": 1,
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "NCE10",
+                    "value": 2,
+                    "symbol": "NCE10",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "GPIO10",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "PDM_CLK",
+                    "value": 4,
+                    "symbol": "PDMCLK",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART1RTS",
+                    "value": 5,
+                    "symbol": "UART1RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "G9",
+            "pinName": "GPIO48",
+            "gpio": 48,
+            "category": "general",
+            "x": 9,
+            "y": 7,
+            "functions": [
+                {
+                    "name": "UART0TX",
+                    "value": 0,
+                    "symbol": "UART0TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "NCE48",
+                    "value": 1,
+                    "symbol": "NCE48",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT28",
+                    "value": 2,
+                    "symbol": "CTIM28",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO48",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "M5SCL",
+                    "value": 4,
+                    "symbol": "M5SCL",
+                    "attributes": {
+                        "IOM": 5,
+                        "Pull up": "1_5K",
+                        "Direction": "Open Drain",
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M5SCK",
+                    "value": 5,
+                    "symbol": "M5SCK",
+                    "attributes": {
+                        "IOM": 5,
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "H1",
+            "pinName": "VSSVCO",
+            "category": "ground",
+            "x": 1,
+            "y": 8
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "H2",
+            "pinName": "VSSS",
+            "category": "ground",
+            "x": 2,
+            "y": 8
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "H3",
+            "pinName": "DVDD",
+            "category": "power",
+            "x": 3,
+            "y": 8
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "H4",
+            "pinName": "GPIO00",
+            "gpio": 0,
+            "category": "general",
+            "x": 4,
+            "y": 8,
+            "functions": [
+                {
+                    "name": "SLSCL",
+                    "value": 0,
+                    "symbol": "SLSCL",
+                    "attributes": {
+                        "Direction": "Input"
+                    }
+                },
+                {
+                    "name": "SLSCK",
+                    "value": 1,
+                    "symbol": "SLSCK",
+                    "attributes": {
+                        "Direction": "Input"
+                    }
+                },
+                {
+                    "name": "CLKOUT",
+                    "value": 2,
+                    "symbol": "CLKOUT"
+                },
+                {
+                    "name": "GPIO00",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 4
+                },
+                {
+                    "name": "MSPI4",
+                    "value": 5,
+                    "symbol": "MSPI4",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": 6
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "NCE0",
+                    "value": 7,
+                    "symbol": "NCE0",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "H5",
+            "pinName": "GPIO42",
+            "gpio": 42,
+            "category": "general",
+            "x": 5,
+            "y": 8,
+            "functions": [
+                {
+                    "name": "UART1TX",
+                    "value": 0,
+                    "symbol": "UART1TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "NCE42",
+                    "value": 1,
+                    "symbol": "NCE42",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT16",
+                    "value": 2,
+                    "symbol": "CTIM16",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO42",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "M3SCL",
+                    "value": 4,
+                    "symbol": "M3SCL",
+                    "attributes": {
+                        "IOM": 3,
+                        "Pull up": "1_5K",
+                        "Direction": "Open Drain",
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M3SCK",
+                    "value": 5,
+                    "symbol": "M3SCK",
+                    "attributes": {
+                        "IOM": 3,
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "H6",
+            "pinName": "GPIO36",
+            "gpio": 36,
+            "category": "general",
+            "x": 6,
+            "y": 8,
+            "functions": [
+                {
+                    "name": "TRIG1",
+                    "value": 0,
+                    "symbol": "TRIG1"
+                },
+                {
+                    "name": "NCE36",
+                    "value": 1,
+                    "symbol": "NCE36",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "UART1RX",
+                    "value": 2,
+                    "symbol": "UART1RX"
+                },
+                {
+                    "name": "GPIO36",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "32KHZ_XT",
+                    "value": 4,
+                    "symbol": "32KHZXT"
+                },
+                {
+                    "name": "UART1CTS",
+                    "value": 5,
+                    "symbol": "UART1CTS"
+                },
+                {
+                    "name": "UART0CTS",
+                    "value": 6,
+                    "symbol": "UART0CTS"
+                },
+                {
+                    "name": "PDM_DATA",
+                    "value": 7,
+                    "symbol": "PDMDATA"
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "H7",
+            "pinName": "GPIO37",
+            "gpio": 37,
+            "category": "general",
+            "x": 7,
+            "y": 8,
+            "functions": [
+                {
+                    "name": "TRIG2",
+                    "value": 0,
+                    "symbol": "TRIG2"
+                },
+                {
+                    "name": "NCE37",
+                    "value": 1,
+                    "symbol": "NCE37",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "UART0RTS",
+                    "value": 2,
+                    "symbol": "UART0RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO37",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "SCCIO",
+                    "value": 4,
+                    "symbol": "SCCIO",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART1TX",
+                    "value": 5,
+                    "symbol": "UART1TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "PDM_CLK",
+                    "value": 6,
+                    "symbol": "PDMCLK",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "CT29",
+                    "value": 7,
+                    "symbol": "CTIM29",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "H8",
+            "pinName": "GPIO49",
+            "gpio": 49,
+            "category": "general",
+            "x": 8,
+            "y": 8,
+            "functions": [
+                {
+                    "name": "UART0RX",
+                    "value": 0,
+                    "symbol": "UART0RX"
+                },
+                {
+                    "name": "NCE49",
+                    "value": 1,
+                    "symbol": "NCE49",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT30",
+                    "value": 2,
+                    "symbol": "CTIM30",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO49",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "M5SDAWIR3",
+                    "value": 4,
+                    "symbol": "M5SDAWIR3",
+                    "attributes": {
+                        "IOM": 5,
+                        "Pull up": "1_5K",
+                        "Direction": "Open Drain",
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M5MISO",
+                    "value": 5,
+                    "symbol": "M5MISO",
+                    "attributes": {
+                        "IOM": 5
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "H9",
+            "pinName": "GPIO47",
+            "category": "general",
+            "x": 9,
+            "y": 8
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "J1",
+            "pinName": "RFIOP",
+            "category": "rf",
+            "x": 1,
+            "y": 9
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "J2",
+            "pinName": "RFIOM",
+            "category": "rf",
+            "x": 2,
+            "y": 9
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "J3",
+            "pinName": "TXEN",
+            "category": "digital",
+            "x": 3,
+            "y": 9
+        },
+        {
+            "configurable": false,
+            "visible": true,
+            "number": "J4",
+            "pinName": "VCC",
+            "category": "power",
+            "x": 4,
+            "y": 9
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "J5",
+            "pinName": "GPIO43",
+            "gpio": 43,
+            "category": "general",
+            "x": 5,
+            "y": 9,
+            "functions": [
+                {
+                    "name": "UART1RX",
+                    "value": 0,
+                    "symbol": "UART1RX"
+                },
+                {
+                    "name": "NCE43",
+                    "value": 1,
+                    "symbol": "NCE43",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT18",
+                    "value": 2,
+                    "symbol": "CTIM18",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO43",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "M3SDAWIR3",
+                    "value": 4,
+                    "symbol": "M3SDAWIR3",
+                    "attributes": {
+                        "IOM": 3,
+                        "Pull up": "1_5K",
+                        "Direction": "Open Drain",
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M3MISO",
+                    "value": 5,
+                    "symbol": "M3MISO",
+                    "attributes": {
+                        "IOM": 5
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "J6",
+            "pinName": "GPIO38",
+            "gpio": 38,
+            "category": "general",
+            "x": 6,
+            "y": 9,
+            "functions": [
+                {
+                    "name": "TRIG3",
+                    "value": 0,
+                    "symbol": "TRIG3"
+                },
+                {
+                    "name": "NCE38",
+                    "value": 1,
+                    "symbol": "NCE38",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "UART0CTS",
+                    "value": 2,
+                    "symbol": "UART0CTS"
+                },
+                {
+                    "name": "GPIO38",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 4
+                },
+                {
+                    "name": "M3MOSI",
+                    "value": 5,
+                    "symbol": "M3MOSI",
+                    "attributes": {
+                        "IOM": 3,
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART1RX",
+                    "value": 6,
+                    "symbol": "UART1RX"
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "J7",
+            "pinName": "GPIO44",
+            "gpio": 44,
+            "category": "general",
+            "x": 7,
+            "y": 9,
+            "functions": [
+                {
+                    "name": "UART1RTS",
+                    "value": 0,
+                    "symbol": "UART1RTS",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "NCE44",
+                    "value": 1,
+                    "symbol": "NCE44",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "IOM": "0",
+                        "CE": "0",
+                        "CE Polarity": "LOW"
+                    }
+                },
+                {
+                    "name": "CT20",
+                    "value": 2,
+                    "symbol": "CTIM20",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO44",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 4
+                },
+                {
+                    "name": "M4MOSI",
+                    "value": 5,
+                    "symbol": "M4MOSI",
+                    "attributes": {
+                        "IOM": 4,
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART0TX",
+                    "value": 6,
+                    "symbol": "UART0TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "J8",
+            "pinName": "GPIO39",
+            "gpio": 39,
+            "category": "general",
+            "x": 8,
+            "y": 9,
+            "functions": [
+                {
+                    "name": "UART0TX",
+                    "value": 0,
+                    "symbol": "UART0TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "UART1TX",
+                    "value": 1,
+                    "symbol": "UART1TX",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "CT25",
+                    "value": 2,
+                    "symbol": "CTIM25",
+                    "attributes": {
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "GPIO39",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "M4SCL",
+                    "value": 4,
+                    "symbol": "M4SCL",
+                    "attributes": {
+                        "IOM": 4,
+                        "Pull up": "1_5K",
+                        "Direction": "Open Drain",
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M4SCK",
+                    "value": 5,
+                    "symbol": "M4SCK",
+                    "attributes": {
+                        "IOM": 4,
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "configurable": true,
+            "visible": true,
+            "number": "J9",
+            "pinName": "GPIO40",
+            "gpio": 40,
+            "category": "general",
+            "x": 9,
+            "y": 9,
+            "functions": [
+                {
+                    "name": "UART0RX",
+                    "value": 0,
+                    "symbol": "UART0RX"
+                },
+                {
+                    "name": "UART1RX",
+                    "value": 1,
+                    "symbol": "UART1RX"
+                },
+                {
+                    "name": "TRIG0",
+                    "value": 2,
+                    "symbol": "TRIG0"
+                },
+                {
+                    "name": "GPIO40",
+                    "value": 3,
+                    "symbol": "GPIO",
+                    "attributes": {
+                        "Drive Strength": 2,
+                        "Direction": "Disabled",
+                        "Interrupt Edge": "None"
+                    }
+                },
+                {
+                    "name": "M4SDAWIR4",
+                    "value": 4,
+                    "symbol": "M4SDAWIR3",
+                    "attributes": {
+                        "IOM": 4,
+                        "Pull up": "1_5K",
+                        "Direction": "Open Drain",
+                        "Drive Strength": 2
+                    }
+                },
+                {
+                    "name": "M4MISO",
+                    "value": 5,
+                    "symbol": "M4MISO",
+                    "attributes": {
+                        "IOM": 4
+                    }
+                },
+                {
+                    "name": "-",
+                    "value": 6
+                },
+                {
+                    "name": "-",
+                    "value": 7
+                }
+            ]
+        }
+    ]
+}
