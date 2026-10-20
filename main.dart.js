@@ -16955,7 +16955,8 @@ k=e}}l=f}m=h}}if(j){if(n)p=o
 else{j=s?q:b
 o=(j==null?p.a(j):j).b
 p=o}A.c4(p)
-p=new A.a6(Math.max(A.ia(m),A.ia(k)),Math.max(A.ia(l),p))
+a=new A.a6(Math.max(A.ia(m),A.ia(k)),Math.max(A.ia(l),p))
+p=a
 break A}p=d}return p},
 aP1(a,b,c,d,e,f,g,h,i){var s,r=null,q=A.a9(),p=J.iD(new Array(4),t.mi)
 for(s=0;s<4;++s)p[s]=new A.ve(r,B.aQ,B.J,new A.k7(1),r,r,r,r,B.aG,r)
@@ -27870,7 +27871,7 @@ $S:2}
 A.auu.prototype={
 $1(a){var s=A.cU().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/5d531788691ec3404cac0cee66ead4007b177363/":s)+a},
+return(s==null?"https://www.gstatic.com/flutter-canvaskit/a804b261645ef8c13eb3d5c44a5c2fb0340c5539/":s)+a},
 $S:222}
 A.Ju.prototype={
 Xv(){var s=this.ad_(),r=$.bh.bB().ImageFilter.MakeColorFilter(s,null)
